@@ -1,8 +1,8 @@
 import "./App.css";
-import { useState } from "react";
 import CoinsState from "./components/context/Coins/CoinsState";
 import TableCoins from "./components/TableCoins";
 function App() {
+
   return (
     <CoinsState>
         <div className=" row ">

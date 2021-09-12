@@ -16,7 +16,9 @@ const CoinRow = (props) => {
           />
         </span>
         {coin.name}
-        <span className="ms-3 text-muted text-uppercase fs-4">{coin.symbol}</span>
+        <span className="ms-3 text-muted text-uppercase fs-4">
+          {coin.symbol}
+        </span>
       </td>
 
       <td>{coin.current_price}</td>
