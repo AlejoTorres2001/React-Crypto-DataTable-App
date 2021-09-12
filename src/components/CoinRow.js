@@ -6,17 +6,17 @@ const CoinRow = (props) => {
     <tr>
       <td>{index}</td>
 
-      <td>
+      <td className="fs-3">
         <span>
           <img
             src={coin.image}
             alt={coin.name}
-            style={{ width: "8%" }}
+            style={{ width: "15%" }}
             className="me-3 img-fluid"
           />
         </span>
         {coin.name}
-        <span className="ms-3 text-muted text-uppercase">{coin.symbol}</span>
+        <span className="ms-3 text-muted text-uppercase fs-4">{coin.symbol}</span>
       </td>
 
       <td>{coin.current_price}</td>

@@ -8,16 +8,14 @@ function App() {
   return (
     <CoinsState>
       <div className="container">
-        <div className="row">
-          
-          <input
+      <input
             type="text"
             placeholder="Search a Coin"
-            className="form-control bg-dark text-light border-0 mt-4 text-center"
+            className="form-control bg-dark text-light border-0 mt-4 text-center w-100 "
             autoFocus
             onChange={(e) => setSearch(e.target.value)}
           />
-
+        <div className=" row ">
           <TableCoins search={search}></TableCoins>
         </div>
       </div>
