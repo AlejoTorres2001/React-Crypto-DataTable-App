@@ -4,9 +4,7 @@ import coinsContext from './context/Coins/CoinsContext';
 const SearchBar = () => {
     const {setFilter,filter,filterCoins} = useContext(coinsContext)
     useEffect(() => {
-        console.log(filter)
         filterCoins(filter)
-
     }, [filter]);
     return (
         <input

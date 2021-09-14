@@ -1,9 +1,9 @@
 import React from "react";
 
 const CoinRow = (props) => {
-  const { coin, index } = props;
+  const { coin, index,key } = props;
   return (
-    <tr>
+    <tr key={key}>
       <td>{index}</td>
 
       <td className="fs-3">
