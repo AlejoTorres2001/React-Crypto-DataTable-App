@@ -1,4 +1,4 @@
-import { GET_COINS, } from "../types";
+import { GET_COINS,SET_FILTERED_COINS,SET_FILTER } from "../types";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default (state, action) => {
@@ -9,7 +9,18 @@ export default (state, action) => {
       return {
         ...state,
         coins: payload,
+        filteredCoins: payload,
       };
+      case SET_FILTERED_COINS:
+        return {
+          ...state,
+          filteredCoins: payload,
+        };
+        case SET_FILTER:
+          return {
+            ...state,
+            filter: payload,
+          };
 
     default:
       return state;

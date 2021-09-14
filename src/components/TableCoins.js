@@ -3,18 +3,14 @@ import coinsContext from "./context/Coins/CoinsContext";
 import CoinRow from "./CoinRow";
 
 const TableCoins = ({ search }) => {
-  const { getData, coins } = useContext(coinsContext);
+  const { getData,filteredCoins } = useContext(coinsContext);
 
   useEffect(() => {
     getData();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const titles = ["#", "Coin", "Price", "Price Change", "24hs Volume"];
-
-  const filteredCoins = coins.filter((coin) =>
-    coin.name.toLowerCase().includes(search.toLowerCase())
-  );
+  const titles = ["#", "Coin", "Price", "Price Change", "24hs Volume"]; 
   return (
     <table className="table table-dark mt-4 table-hover ">
       <thead>
