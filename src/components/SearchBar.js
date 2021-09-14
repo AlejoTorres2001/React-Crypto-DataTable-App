@@ -5,6 +5,7 @@ const SearchBar = () => {
     const {setFilter,filter,filterCoins} = useContext(coinsContext)
     useEffect(() => {
         filterCoins(filter)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [filter]);
     return (
         <input
