@@ -1,5 +1,4 @@
 import "./App.css";
-import { useState } from "react";
 import CoinsState from "./components/context/Coins/CoinsState";
 import TableCoins from "./components/TableCoins";
 import SearchBar from "./components/SearchBar";
